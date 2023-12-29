@@ -14,6 +14,9 @@ dependencies:
   astro:
     specifier: ^4.0.7
     version: 4.0.7
+  date-fns:
+    specifier: ^3.0.6
+    version: 3.0.6
   tailwindcss:
     specifier: ^3.4.0
     version: 3.4.0
@@ -1224,6 +1227,10 @@ packages:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
     engines: {node: '>=4'}
     hasBin: true
+    dev: false
+
+  /date-fns@3.0.6:
+    resolution: {integrity: sha512-W+G99rycpKMMF2/YD064b2lE7jJGUe+EjOES7Q8BIGY8sbNdbgcs9XFTZwvzc9Jx1f3k7LB7gZaZa7f8Agzljg==}
     dev: false
 
   /debug@2.6.9:
