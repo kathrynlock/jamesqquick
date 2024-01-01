@@ -1,0 +1,9 @@
+
+---
+import { getCollection } from "astro:content";
+import type {GetStaticPathsOptions} from "astro";
+export async getStaticPaths({paginate}:GetStaticPathsOptions){
+    const allPosts = await getCollection("posts");
+    return paginate (allPosts, {pageSize: 6})
+}
+---
