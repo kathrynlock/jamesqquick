@@ -28,6 +28,9 @@ const posts = page.data as CollectionEntry<"posts">[];
             <Pagination prevURL={page.url.prev} nextURL={page.url.next}/>
         </div>
         <PostList posts={posts}/>
+        <div class="mb-36">
+            <Pagination prevURL={page.url.prev} nextURL={page.url.next}/>
+        </div>
     </Main>
 
 </Layout>
