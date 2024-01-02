@@ -1,0 +1,15 @@
+---
+type Props = {
+    prevURL?: string;
+    nextURL?: string;
+}
+
+const {prevURL, nextURL} = Astro.props;
+---
+{
+    prevURL && <a href={prevURL} class="bg-violet-800 text-white py-3 px-6 rounded-xl text-xl">Previous</a>
+}
+
+{
+    nextURL && <a href={nextURL} class="bg-violet-800 text-white py-3 px-6 rounded-xl text-xl">Next</a>
+}
