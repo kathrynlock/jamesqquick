@@ -6,10 +6,12 @@ type Props = {
 
 const {prevURL, nextURL} = Astro.props;
 ---
+<div class="flex justify-between">
 {
-    prevURL && <a href={prevURL} class="bg-violet-800 text-white py-3 px-6 rounded-xl text-xl">Previous</a>
+    prevURL ? (<a href={prevURL} class="bg-violet-800 text-white py-3 px-6 rounded-xl text-xl">Previous</a>) : <div></div>
 }
 
 {
-    nextURL && <a href={nextURL} class="bg-violet-800 text-white py-3 px-6 rounded-xl text-xl">Next</a>
+    nextURL ? (<a href={nextURL} class="bg-violet-800 text-white py-3 px-6 rounded-xl text-xl">Next</a>) : <div></div>
 }
+</div>
